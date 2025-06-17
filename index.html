@@ -3,45 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Simple Landing Page</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">MyLanding</h1>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteLast()">DEL</button>
+      <button onclick="appendOperator('/')">÷</button>
+      <button onclick="appendOperator('*')">×</button>
+      
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="appendOperator('-')">−</button>
 
-  <section class="hero">
-    <h2>Welcome to My Landing Page</h2>
-    <p>Your solution starts here.</p>
-    <a href="#" class="btn">Get Started</a>
-  </section>
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendOperator('+')">+</button>
 
-  <section class="features">
-    <div class="feature-box">
-      <h3>Fast</h3>
-      <p>Quick setup and blazing performance.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Responsive</h3>
-      <p>Looks great on all devices.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Customizable</h3>
-      <p>Easy to modify and extend.</p>
-    </div>
-  </section>
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="calculateResult()">=</button>
 
-  <footer>
-    <p>&copy; 2025 MyLanding. All rights reserved.</p>
-  </footer>
+      <button onclick="appendNumber('0')" class="zero">0</button>
+      <button onclick="appendNumber('.')">.</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
