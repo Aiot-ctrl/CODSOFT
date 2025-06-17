@@ -1,47 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 body {
-  background: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-}
-
-.calculator {
-  background: #222;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.display {
-  background: #000;
-  color: #0f0;
-  font-size: 2rem;
-  text-align: right;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
   padding: 20px;
-  min-height: 60px;
 }
 
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 80px);
-  grid-auto-rows: 80px;
-}
-
-button {
-  font-size: 1.5rem;
-  border: 1px solid #444;
+header {
+  text-align: center;
   background: #333;
+  color: #fff;
+  padding: 30px 10px;
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+#about img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #222;
   color: white;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background: #444;
-}
-
-.zero {
-  grid-column: span 2;
+  font-size: 14px;
 }
